@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "404 Redirector",
+  "version": "1.0",
+  "description": "If a request ends in 404, jump to an Wayback Machine.",
+  "permissions": [
+    "webRequest",
+    "tabs"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "404 Redirector"
+  }
+}
